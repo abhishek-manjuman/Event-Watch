@@ -32,7 +32,7 @@ if(!isset($_SESSION['email'])){
     </div>
 
     <div class="ui container">
-        <div class="ui segment piled orange signup-form">
+        <div class="ui segment orange signup-form">
         <h2 class="ui center aligned icon header">
             <i class="circular circle massive orange icon" ></i>
             Let's Create Your Event
