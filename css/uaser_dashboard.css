@@ -1,0 +1,18 @@
+.ui.container>.ui.grid.user-dashboard{
+    margin-top: 10px;
+}
+
+.ui.grid>.wide.column>.ui.segment.user-dashboard-pic-detail{
+    height: 280px;
+}
+
+.ui.segment> .ui.header.about-edit:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+.ui.segment> .ui.header.about-edit{
+    cursor: pointer;
+}
+.ui.segments>.ui.segment.about-edit-detail{
+    display: none;
+}
