@@ -72,7 +72,9 @@ if(isset($_SESSION['email'])){
             <label for="">forget password?</label>
             </div>
         </div> -->
-        <button class="ui button inverted orange btn-login" type="submit">Login</button>
+        <div class="ui header right aligned">
+            <button class="ui button inverted orange btn-login" type="submit">Login</button>
+        </div>
     </form>
     <div class="ui divider horizontal">password forget?</div>
      <p class="forget-pass">Recover your password! <a href="forgetPass.php">Click hear</a></p> 
