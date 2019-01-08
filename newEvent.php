@@ -25,19 +25,10 @@ if(!isset($_SESSION['email'])){
 </head>
 <body>
         
-    <div class="ui  container fluid">
-
-                <h1><a href="index.php">Event <i class="circular eye orange icon"></i>Watch</a></h1>
-
-    </div>
 
     <div class="ui container">
-        <div class="ui segment orange signup-form">
-        <h2 class="ui center aligned icon header">
-            <i class="circular circle massive orange icon" ></i>
-            Let's Create Your Event
-        </h2>
-        
+        <div class="ui segment tall stacked very padded orange signup-form">
+                <h4 class="ui header center aligned"><a href="index.php">Event <i class="circular eye orange icon"></i>Watch</a></h4>
         <div class="ui divider"></div>
         <form class="ui form" action="neweventdb.php" method="POST"> 
         <div class="field">
