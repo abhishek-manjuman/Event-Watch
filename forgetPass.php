@@ -45,7 +45,9 @@ if(isset($_SESSION['email'])){
                 <i class="icon envelope"></i>
             </div>
         </div>
+        <div class="ui header right aligned">
         <button class="ui button inverted orange btn-login" type="submit">Send</button>
+        </div>
     </form>
     <div class="ui divider horizontal">try diffrent way!</div>
      <p class="forget-pass">Recover your password by phone number! <a href="forgetPassPhone.php">Click hear</a></p> 

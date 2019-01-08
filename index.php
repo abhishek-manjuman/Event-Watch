@@ -34,18 +34,25 @@ session_start();
 
         
         <div class="ui container fluid">
-            <canvas></canvas>
+            <canvas ></canvas>
           <div class="ui container">
-            <div class="ui segment orange raised tall stacked search-panel">
+            <div class="ui segment pink inverted raised search-panel">
                 <div class="ui massive fluid icon input">
-                    <input type="text" style="border-radius:50px;" placeholder="Search your requirment.......">
+                  <select class="ui compact selection dropdown">
+                  <option value="all">All</option>
+                  <option selected="" value="articles">Articles</option>
+                  <option value="products">Products</option>
+                </select>
+                    <input type="text" id="main-search" placeholder="Search your requirment......." autofocus>
                     <i class="search icon"></i>
                   </div>
-                  <div class="ui divider"></div>
+                  <!-- <div class="ui divider hidden"></div> -->
 
+
+                  <div class="ui segment">
                   <div class="quick-link">
                     
-                    <a href="" class="quick-links" data-tooltip="Add users to your feed" data-variation="mini inverted">#search</a>
+                    <a href="" class="quick-links" data-content="Add users to your feed" data-variation="mini inverted">#search</a>
                     <a href="" class="quick-links">#search</a>
                     <a href="" class="quick-links">#search</a>
                     <a href="" class="quick-links">#search</a>
@@ -61,11 +68,12 @@ session_start();
                     <a href="" class="quick-links">#search</a>
                     <a href="" class="quick-links">#search</a>
                   </div>
+        </div>
             </div>
           </div>
         </div>
-          <div class="ui container fluid" style="position:relative;">
-            <div class="ui segment orange events-panal">
+          <div class="ui container fluid product_panel">
+            <div class="ui segment basic events-panal">
                 <div class="ui cards product-card">
                     <div class="card">
                       <div class="image">

@@ -81,7 +81,9 @@ if(isset($_SESSION['email'])){
             <label>I agree to the <a href="tearms.php">Terms</a> and <a href="tearms.php">Conditions</a></label>
             </div>
         </div>
-        <button class="ui button inverted orange btn-login" type="submit">Sign Up</button>
+        <div class="ui header right aligned" style="margin:0;">
+            <button class="ui button inverted orange btn-login" type="submit">Sign Up</button>
+        </div>
         </form>
 
     </div>

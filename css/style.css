@@ -44,7 +44,15 @@ h1,h2,h3,h4,h5,h6{
 /* ----------- Quick Link -------- */
 
 .ui.container> .search-panel{
-    margin-top: 150px;
+    margin-top: -500px;
+    opacity: 0.86;
+}
+
+#main-search{
+    color:#00f;
+    /* border-radius: 0px 50px 50x 0px; */
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .search-panel>.quick-link>label{
@@ -59,7 +67,7 @@ h1,h2,h3,h4,h5,h6{
     color: coral;
 }
 .quick-link .popup{
-    color: blue;
+    color: #000;
 }
 
 /* ----------- End Quick Link -------- */
@@ -67,8 +75,10 @@ h1,h2,h3,h4,h5,h6{
 
 
 /* ************************ Product cards start =================== */
-
-.event-panal>.ui.cards.product-cards>.card{
+.product_panel{
+    margin-top: 250px;
+}
+.ui.cards .card{
     width: 319px;
 }
 
