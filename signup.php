@@ -39,7 +39,7 @@ if(isset($_SESSION['email'])){
              </div>
         </h1>
         
-        <div class="ui divider horizontal">Sign up with social media</div>
+        <div class="ui divider horizontal">Continue account with</div>
         <button class="ui google plus button">
             <i class="google plus icon"></i>
             Google

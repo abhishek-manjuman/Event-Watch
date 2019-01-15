@@ -72,7 +72,80 @@ session_start();
             </div>
           </div>
         </div>
-          <div class="ui container fluid product_panel">
+
+        <div class="ui container ">
+          <div class="ui segment center aligned basic ">
+            <a href="#product_panel">
+              <i class="angle icon double loading circular big pink inverted down"></i>
+            </a>
+        </div>
+        </div>
+        <div class="ui segment basic">
+          <div class="ui segment">
+            <!-- div.ui.grid>div.two.wide.column*8>p.ui.header.center.aligned>div.content{Service}/div.sub.header{Ico -->
+              <div class="ui center aligned eight column grid">
+                <div class="row">
+                  <div class="column">
+                    <div class="ui vertical fluid menu">
+                      <div class="header item">
+                        Cats
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui vertical fluid menu">
+                      <div class="header item">
+                        Cats
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui vertical fluid menu">
+                      <div class="header item">
+                        Cats
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui vertical fluid menu">
+                      <div class="header item">
+                        Cats
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui vertical fluid menu">
+                      <div class="header item">
+                        Cats
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui vertical fluid menu">
+                      <div class="header item">
+                        Cats
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui vertical fluid menu">
+                      <div class="header item">
+                        Cats
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui vertical fluid menu">
+                      <div class="header item">
+                        Cats
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+          <div class="ui container fluid product_panel" id="product_panel">
             <div class="ui segment basic events-panal">
                 <div class="ui cards product-card">
                     <div class="card">

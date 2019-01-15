@@ -25,6 +25,7 @@ if(isset($_SESSION['email'])){
         
 
     <div class="ui container">
+
         <div class="ui segment tall stacked very padded orange login-form">
         <h4 class="ui header center aligned"><a href="index.php">Event <i class="circular eye orange icon"></i>Watch</a></h4>
         <h1 class="ui header center aligned" style="margin-top:0px;">
@@ -36,7 +37,7 @@ if(isset($_SESSION['email'])){
             </div>
         </h1>
         <!-- <div class="ui hidden divider"></div>         -->
-        <div class="ui horizontal divider">Sign In with social accounts</div>
+        <div class="ui horizontal divider">Continue accounts with</div>
         <button class="ui google plus button">
             <i class="google plus icon"></i>
             Google
