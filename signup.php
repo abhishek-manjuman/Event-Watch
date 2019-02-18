@@ -39,7 +39,7 @@ if(isset($_SESSION['email'])){
              </div>
         </h1>
         
-        <div class="ui divider horizontal">Continue account with</div>
+        <!-- <div class="ui divider horizontal">Continue account with</div>
         <button class="ui google plus button">
             <i class="google plus icon"></i>
             Google
@@ -51,13 +51,20 @@ if(isset($_SESSION['email'])){
         <button class="ui facebook button">
             <i class="facebook icon"></i>
             Facebook
-        </button>
+        </button> -->
         <div class="ui divider horizontal">Sign up with email and password</div>
         <form class="ui form" action="signupdb.php" method="POST"> 
         <div class="field">
+            <!-- <label>Enrolment Number</label> -->
+            <div class="ui left icon huge input">
+                <input name="signup-enrolment-no" type="text" placeholder="Enrolment number" required autofocus>
+                <i class="university icon"></i>
+            </div>
+        </div>
+        <div class="field">
             <!-- <label>Email</label> -->
             <div class="ui left icon huge input">
-                <input name="signup-email" type="email" placeholder="Email" required autofocus>
+                <input name="signup-email" type="email" placeholder="Email" required >
                 <i class="icon envelope"></i>
             </div>
         </div>
@@ -77,7 +84,7 @@ if(isset($_SESSION['email'])){
         </div>
         <div class="field">
             <div class="ui checkbox signup-check">
-            <input tabindex="0" class="hidden" type="checkbox" required>
+            <input tabindex="0" name="signup-tearms" class="hidden" type="checkbox" required>
             <label>I agree to the <a href="tearms.php">Terms</a> and <a href="tearms.php">Conditions</a></label>
             </div>
         </div>

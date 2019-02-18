@@ -39,8 +39,9 @@ session_start();
             <div class="ui segment pink inverted raised search-panel">
                 <div class="ui massive fluid icon input">
                   <select class="ui compact selection dropdown">
+                  <option selected disabled>Select events type</option>
                   <option value="all">All</option>
-                  <option selected="" value="articles">Articles</option>
+                  <option value="articles">Articles</option>
                   <option value="products">Products</option>
                 </select>
                     <input type="text" id="main-search" placeholder="Search your requirment......." autofocus>
