@@ -2,7 +2,7 @@
 
 session_start();
 if(!isset($_SESSION['email'])){
-    header('location:login.php');
+    header('location:event-organizer.php');
 }elseif(isset($_SESSION['email'])){
     $current_user= $_SESSION['email'];
 }

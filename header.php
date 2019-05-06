@@ -31,7 +31,7 @@ $current_user = $_SESSION['email'];
                 </div>
               </div>
               <div class="item">
-                  <a class="ui inverted button" href="newEvent.php">Service Provider</a>
+                  <a class="ui inverted button" href="newEvent.php" target="_blank">POST AN EVENT</a>
               </div>
               
                 <?php

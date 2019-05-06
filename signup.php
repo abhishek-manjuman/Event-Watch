@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+include "dbconnection.php";
 if(isset($_SESSION['email'])){
     header('location:index.php');
 }elseif(!isset($_SESSION['email'])){
@@ -21,13 +22,25 @@ if(isset($_SESSION['email'])){
 
 </head>
 <body>
-        
+
     <div class="ui container fluid">
 
-        
+
         </div>
-        
+
         <div class="ui container">
+          <?php
+          if(isset($_GET["already_exist"]))
+             {
+              ?>
+              <div class="ui center aligned header" style="margin-top: 20px;">
+              <div class="ui pointing below red basic label">
+                Email or Phone Number already registered! Go to <p><a href="login.php">Sign In.</a> </p>
+              </div>
+            </div>
+              <?php
+             }
+           ?>
             <div class="ui segment tall stacked very padded orange signup-form">
                     <h4 class="ui center aligned header"><a href="index.php">Event <i class="circular eye orange icon"></i>Watch</a></h4>
         <h1 class="ui center aligned header" style="margin-top:0px;">
@@ -38,7 +51,7 @@ if(isset($_SESSION['email'])){
                  </div>
              </div>
         </h1>
-        
+
         <!-- <div class="ui divider horizontal">Continue account with</div>
         <button class="ui google plus button">
             <i class="google plus icon"></i>
@@ -53,26 +66,34 @@ if(isset($_SESSION['email'])){
             Facebook
         </button> -->
         <div class="ui divider horizontal">Sign up with email and password</div>
-        <form class="ui form" action="signupdb.php" method="POST"> 
-        <div class="field">
-            <!-- <label>Enrolment Number</label> -->
+        <form class="ui form" action="signupdb.php" method="POST">
+        <!-- <div class="field">
+         <label>Enrolment Number</label>
             <div class="ui left icon huge input">
                 <input name="signup-enrolment-no" type="text" placeholder="Enrolment number" required autofocus>
                 <i class="university icon"></i>
             </div>
-        </div>
+            <div class="ui pointing red basic label" id="enrolment-err" style="display: none;">
+                This enrolment number is already registered!
+            </div>
+        </div> -->
         <div class="field">
             <!-- <label>Email</label> -->
             <div class="ui left icon huge input">
-                <input name="signup-email" type="email" placeholder="Email" required >
+                <input name="signup-email" type="email" placeholder="Email" required onblur="error(this.value)">
                 <i class="icon envelope"></i>
+            </div>
+            <div class="ui pointing red basic label" id="email-err" style="display: none;">
             </div>
         </div>
         <div class="field">
             <!-- <label>Phone Number</label> -->
             <div class="ui left icon huge input">
-                <input name="signup-phnumber" type="number" placeholder="Phone Number" required maxlength="10" minlength="10">
+                <input name="signup-phnumber" type="number" placeholder="Phone Number" required maxlength="10" onblur="error(this.value)" minlength="10">
                 <i class="icon phone"></i>
+            </div>
+            <div class="ui pointing red basic label" id="phnumber-err" style="display: none;">
+                This phone nuumber is already registered!
             </div>
         </div>
         <div class="field">
@@ -94,7 +115,7 @@ if(isset($_SESSION['email'])){
         </form>
 
     </div>
-<!-- 
+<!--
     <div class="ui segment tall stacked orange signup-form2">
         <p>Service Provider! <a href="serviceProvider.php">Register Hear</a> </p>
     </div> -->
@@ -109,6 +130,8 @@ if(isset($_SESSION['email'])){
     <script src="js/semantic.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
+
 </html>
 
 <?php

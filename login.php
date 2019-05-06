@@ -5,6 +5,8 @@ if(isset($_SESSION['email'])){
     header('location:index.php');
 }elseif(!isset($_SESSION['email'])){
 
+
+    // $t1 = $_GET['t1'];
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +33,9 @@ if(isset($_SESSION['email'])){
         <h1 class="ui header center aligned" style="margin-top:0px;">
             <div class="ui content">
                 Sign In
+                <!-- <?php 
+                // echo $t1;
+                ?> -->
                 <div class="sub header">
                     Sign In your Event-Watch account
                 </div>
@@ -55,14 +60,14 @@ if(isset($_SESSION['email'])){
         <div class="field">
             <!-- <label>Email</label> -->
             <div class="ui left icon huge input">
-                <input name="log-email" type="text" placeholder="Email / Phone number" autofocus>
+                <input name="log-email" type="text" placeholder="Email / Phone number" autofocus required>
                 <i class="icon user"></i>
             </div>
         </div>
         <div class="field">
             <!-- <label>Password</label> -->
             <div class="ui left icon huge input">
-                <input name="log-password" type="password" placeholder="Password">
+                <input name="log-password" type="password" placeholder="Password" required>
                 <i class="icon lock"></i>
             </div>
         </div>
