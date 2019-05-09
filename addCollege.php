@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Add New College</title>
-    
+
     <!-- =======================  CSS Files ==================== -->
     <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,6 +14,26 @@
 </head>
 <body>
     <div class="ui container">
+      <?php
+      if(isset($_GET["data_inserted"]))
+         {
+          ?>
+          <div class="ui center aligned header" style="margin-top: 20px;">
+            <div class="ui green clearing inverted segment" style="width:40%; margin-left:auto; margin-right:auto;">
+              New event type is added successfuly.
+            </div>
+            </div>
+          <?php
+        }elseif (isset($_GET["data_failed"])) {
+          ?>
+          <div class="ui center aligned header" style="margin-top: 20px; ">
+            <div class="ui red inverted segment" style="width:40%; margin-left:auto; margin-right:auto;">
+              Event Type is not added.
+            </div>
+            </div>
+          <?php
+        }
+       ?>
         <div class="ui segment very padded basic">
             <div class="ui segment inverted orange very padded">
             <h4 class="ui header center aligned"><a href="index.php">Event <i class="circular black eye icon" ></i>Watch</a></h4>
@@ -27,7 +47,7 @@
                 </h1>
                 <div class="ui horizontal divider"><i class="university circular icon"></i></div>
 
-                <form class="ui form" action="addcollegedb.php" method="POST" enctype="multipart/form-data"> 
+                <form class="ui form" action="addcollegedb.php" method="POST" enctype="multipart/form-data">
                     <div class="field">
                         <div class="two fields">
                             <div class="required field">
@@ -47,7 +67,7 @@
                                     <i class="icon envelope"></i>
                                 </div>
                                 <div class="ui pointing red basic label" id="email-err" style="display: none;">
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -65,12 +85,7 @@
                                 </div>
                             </div>
                             <div class="required field">
-                                <!-- <label>Password</label> -->
-                                <!-- <div class="ui left icon huge input">
-                                    <input name="signup-password" type="password" placeholder="Password" required>
-                                    <i class="icon lock"></i>
-                                </div> -->
-                                <div class="ui search huge selection dropdown country-item">
+                                  <div class="ui search huge selection dropdown country-item">
                                     <input name="country" type="hidden">
                                     <i class="dropdown icon"></i>
                                     <div class="default text">Select country*</div>

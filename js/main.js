@@ -7,6 +7,7 @@ $('.ui.checkbox.login-check').checkbox();
 $('.ui.radio.orange.checkbox.event-visibility').checkbox();
 $('.ui.radio.orange.checkbox.event-repit').checkbox();
 $('.ui.checkbox.signup-check').checkbox();
+$('.ui.selection.dropdown').dropdown();
 
 $('.menu .item').tab();
 
@@ -14,7 +15,7 @@ $('.item .current-user-profile')
  .popup({
   popup : $('.custom.popup'),
   on    : 'click',
-  transition: 'horizontal flip'  
+  transition: 'horizontal flip'
 
  });
 
@@ -25,3 +26,4 @@ $('.item .current-user-profile')
 
 // ====================== login.js =========================
 
+// =====================  new Events =======================

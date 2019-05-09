@@ -19,8 +19,8 @@ session_start();
 <!--  Abhishek maurya  -->
     <style>
     canvas{
-        
-        
+
+
           }
     </style>
 
@@ -32,7 +32,7 @@ session_start();
          include "header.php";
         ?>
 
-        
+
         <div class="ui container fluid">
             <canvas ></canvas>
           <div class="ui container">
@@ -52,7 +52,7 @@ session_start();
 
                   <div class="ui segment">
                   <div class="quick-link">
-                    
+
                     <a href="" class="quick-links" data-content="Add users to your feed" data-variation="mini inverted">#search</a>
                     <a href="" class="quick-links">#search</a>
                     <a href="" class="quick-links">#search</a>
@@ -81,9 +81,9 @@ session_start();
             </a>
         </div>
         </div>
-        <div class="ui segment basic">
+        <!-- <div class="ui segment basic">
           <div class="ui segment">
-            <!-- div.ui.grid>div.two.wide.column*8>p.ui.header.center.aligned>div.content{Service}/div.sub.header{Ico -->
+            <!-- div.ui.grid>div.two.wide.column*8>p.ui.header.center.aligned>div.content{Service}/div.sub.header{Ico
               <div class="ui center aligned eight column grid">
                 <div class="row">
                   <div class="column">
@@ -145,7 +145,7 @@ session_start();
                 </div>
               </div>
           </div>
-        </div>
+        </div> -->
           <div class="ui container fluid product_panel" id="product_panel">
             <div class="ui segment basic events-panal">
                 <div class="ui cards product-card">
@@ -156,19 +156,21 @@ session_start();
                       <div class="content">
                         <div class="header">Matt Giampietro</div>
                         <div class="meta">
-                          <a>Friends</a>
+                          <a>Techenical</a>
                         </div>
-                        <div class="description">
-                          Matthew is an interior designer living in New York.
+                        <div class="venue">
+                           <b>Address :</b>
+                           I-184, Alpha 2, Greater noida, Gautam budha
                         </div>
                       </div>
                       <div class="extra content">
                         <span class="right floated">
-                          Joined in 2013
+                          <strong>Post on:</strong>
+                          12/04/2019
                         </span>
                         <span>
                           <i class="user icon"></i>
-                          75 Friends
+                          75 View
                         </span>
                       </div>
                     </div>
@@ -428,7 +430,7 @@ session_start();
                         </div>
             </div>
           </div>
-          
+
     </div>
 
 

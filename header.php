@@ -2,10 +2,16 @@
 if(isset($_SESSION['email'])){
 $current_user = $_SESSION['email'];
 }
+
+include "dbconnection.php";
+
+mysqli_select_db($conn, 'eventwatch');
+
+$sql_qr =  "select ";
 ?>
 
 <div class="ui small menu inverted pink">
-            
+
             <a class="active item home" href="index.php">
                 <i class="circular black eye icon"></i>
               Event
@@ -33,7 +39,7 @@ $current_user = $_SESSION['email'];
               <div class="item">
                   <a class="ui inverted button" href="newEvent.php" target="_blank">POST AN EVENT</a>
               </div>
-              
+
                 <?php
                 if(empty($current_user)){
                 ?>
@@ -50,18 +56,18 @@ $current_user = $_SESSION['email'];
                     <img class="ui avatar image current-user-profile"  src="image/user_image.png">
 
                     <div class="ui custom popup top left transition hidden">
-                    
+
                             <img class="ui small centered circular image"  src="image/user_image.png" style="background-color:white;height:100px;width:100px;">
                             <div class="ui center grey aligned header" style="margin:calc(1rem - .14285714em) 0 1rem;">
                             Hello User!
-                            </div> 
+                            </div>
                             <div class="ui vertical menu">
                               <div class="item">
                                 <div class="menu">
                                   <a class="item" href="userdashboard.php">
                                 <i class="user orange icon"></i>
                                 Profile  </a>
-                                <div class="ui divider"></div>
+                                <!-- <div class="ui divider"></div>
                                   <a class="item">Consumer</a>
                                   <div class="ui divider"></div>
                                   <a class="item">Rails</a>
@@ -69,7 +75,7 @@ $current_user = $_SESSION['email'];
                                   <a class="item">Python</a>
                                   <a class="item">Dedicated</a>
                                   <a class="item">E-mail Support</a>
-                                  <a class="item">FAQs</a>
+                                  <a class="item">FAQs</a> -->
                                 </div>
                               </div>
                             </div>
@@ -78,9 +84,7 @@ $current_user = $_SESSION['email'];
                     </div>
                 <?php
                  }
-                ?>  
+                ?>
               </div>
             </div>
             </div>
-
-            

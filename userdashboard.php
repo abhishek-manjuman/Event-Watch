@@ -25,7 +25,7 @@ if(!isset($_SESSION['email'])){
 
 </head>
 <body>
-    
+
     <div class="ui container fluid">
         <?php
          include "header.php";
@@ -36,7 +36,7 @@ if(!isset($_SESSION['email'])){
             <div class="ui grid user-dashboard">
                 <div class="twelve wide column">
                         <div class="ui segments">
-                                
+
                                 <div class="ui segment">
                                   <div class="ui grid">
                                       <div class="six wide column">
@@ -47,14 +47,22 @@ if(!isset($_SESSION['email'])){
                                       </div>
                                       <div class="ten wide column">
                                           <div class="ui center aligned segment stacked user-dashboard-pic-detail">
-                                              <h1 class="ui header">
-                                                  <div class="content">
-                                                      Abhishek Maurya
-                                                      <div class="sub header">
-                                                          I am a Software Devloper.
+                                              <div class="ui segment basic">
+                                                <div class="ui segment basic very">
+                                                  <h1 class="ui header">
+                                                      <div class="content">
+                                                          Priyanka Rawal
+                                                          <div class="sub header">
+                                                            <span style="font-family:fantasy;">
+                                                              <strong>
+                                                                "I am a software devaloper."
+                                                              </strong>
+                                                            </span>
+                                                          </div>
                                                       </div>
-                                                  </div>
-                                                </h1>
+                                                    </h1>
+                                                </div>
+                                              </div>
                                           </div>
                                       </div>
                                   </div>
@@ -70,15 +78,15 @@ if(!isset($_SESSION['email'])){
                                                     <i class="heart icon circular current-user-profile_favourite_icon" data-content="Add in Favourite list" data-variation="mini inverted" ></i>
                                                 </a>
                                                 <a class="ui white item">
-                                                        <i class="share alternate icon circular current-user-profile_share_icon" data-variation="mini" title="share"></i> 
+                                                        <i class="share alternate icon circular current-user-profile_share_icon" data-variation="mini" title="share"></i>
                                                         <div class="ui current-user-profile_share custom popup transition hidden">
                                                             <i class="twitter inverted  teal circular icon"></i>
                                                             <div class="ui divider"></div>
                                                             <i class="facebook inverted  blue circular icon"></i>
-                                                        
+
                                                             <div class="ui divider"></div>
                                                             <i class="tumblr inverted  circular icon"></i>
-                                                          </div>    
+                                                          </div>
                                                 </a>
                                                 <a  class="ui item" href="setting.php">
                                                     <i class="cog icon circular current-user-profile_settings_icon" data-content="Settings" data-variation="mini inverted"></i>
@@ -219,11 +227,11 @@ if(!isset($_SESSION['email'])){
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto voluptatem facere et dolorum eveniet voluptas odio magni aut debitis! Rerum aspernatur iste in impedit modi quisquam debitis facilis maiores?</p>
                         </div>
                         <div class="ui bottom tab segment" data-tab="setting">
-                            
+
                                 <h1>Abhishek maurya</h1>
                                 <h1>Abhishek maurya</h1>
                                 <h1>Abhishek maurya</h1>
-                            
+
                         </div>
                 </div>
                 <div class="four wide column">
@@ -234,7 +242,7 @@ if(!isset($_SESSION['email'])){
             </div>
         </div>
     </div>
-        
+
 
     <!-- ======================  JS Files ===================== -->
     <script src="js/jQuery.js"></script>

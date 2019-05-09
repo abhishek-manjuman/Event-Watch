@@ -22,16 +22,16 @@ session_start();
 
 </head>
 <body>
-    
+
     <div class="ui container fluid">
         <?php
          include "header.php";
         ?>
     </div>
-    
+
     <div class="ui container fluid">
         <div class="ui container fluid">
-        <img class="ui fluid image" src="image/Services-banner.jpg">
+        <img class="ui fluid image" src="image/banner.jpg" width="100%" style="height:270px;">
         </div>
         <div class="ui segment basic">
         <div class="ui container fluid">

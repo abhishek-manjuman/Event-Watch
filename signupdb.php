@@ -21,7 +21,6 @@ $sql_qur = "select * from login where email='$email' OR phnumber = '$phnumber'";
 $result = mysqli_query($conn,$sql_qur);
 
 $num = mysqli_num_rows($result);
-$already_exist="true";
 if($num == 1){
     header('location:signup.php?already_exist=already_exist');
 }else{

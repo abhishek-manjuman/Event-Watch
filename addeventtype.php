@@ -1,5 +1,4 @@
 <?php
-
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Event Watch</title>
+    <title>New Event Type</title>
 
     <!-- =======================  CSS Files ==================== -->
     <link rel="stylesheet" href="css/semantic.min.css">
@@ -19,24 +18,31 @@
 
     <div class="ui container">
       <?php
-      if(isset($_GET["already_exist"]))
+      if(isset($_GET["data_inserted"]))
          {
           ?>
           <div class="ui center aligned header" style="margin-top: 20px;">
-          <div class="ui pointing below red basic label">
-            Email or Phone Number already registered! Go to <p><a href="login.php">Sign In.</a> </p>
-          </div>
-        </div>
+            <div class="ui green clearing inverted segment" style="width:40%; margin-left:auto; margin-right:auto;">
+              New event type is added successfuly.
+            </div>
+            </div>
           <?php
-         }
+        }elseif (isset($_GET["data_failed"])) {
+          ?>
+          <div class="ui center aligned header" style="margin-top: 20px; ">
+            <div class="ui red inverted segment" style="width:40%; margin-left:auto; margin-right:auto;">
+              Event Type is not added.
+            </div>
+            </div>
+          <?php
+        }
        ?>
         <div class="ui segment tall stacked very padded orange signup-form">
                 <h4 class="ui center aligned header"><a href="index.php">Event <i class="circular eye orange icon"></i>Watch</a></h4>
     <h1 class="ui center aligned header" style="margin-top:0px;">
          <div class="content">
-             Sign Up
              <div class="sub header">
-                 Sign up yourself on Event-Watch
+               New Event Type
              </div>
          </div>
     </h1>
@@ -54,8 +60,8 @@
         <i class="facebook icon"></i>
         Facebook
     </button> -->
-    <div class="ui divider horizontal">Sign up with email and password</div>
-    <form class="ui form" action="signupdb.php" method="POST">
+    <div class="ui divider horizontal">Event Type</div>
+    <form class="ui form" action="addeventtypeDB.php" method="POST">
     <!-- <div class="field">
      <label>Enrolment Number</label>
         <div class="ui left icon huge input">
@@ -68,38 +74,34 @@
     </div> -->
     <div class="field">
         <!-- <label>Email</label> -->
-        <div class="ui left icon huge input">
-            <input name="signup-email" type="email" placeholder="Email" required onblur="error(this.value)">
-            <i class="icon envelope"></i>
-        </div>
-        <div class="ui pointing red basic label" id="email-err" style="display: none;">
+        <label for="">Event Type</label>
+        <div class="ui  input">
+            <input name="type-name" type="text" placeholder="Event type" required>
         </div>
     </div>
     <div class="field">
         <!-- <label>Phone Number</label> -->
-        <div class="ui left icon huge input">
-            <input name="signup-phnumber" type="number" placeholder="Phone Number" required maxlength="10" onblur="error(this.value)" minlength="10">
-            <i class="icon phone"></i>
-        </div>
-        <div class="ui pointing red basic label" id="phnumber-err" style="display: none;">
-            This phone nuumber is already registered!
+        <label for="">Type Detail</label>
+        <div class="ui input">
+            <textarea  name="type-detail" rows="2" required placeholder="write short detail about type max(250 word)"></textarea>
         </div>
     </div>
     <div class="field">
-        <!-- <label>Password</label> -->
-        <div class="ui left icon huge input">
-            <input name="signup-password" type="password" placeholder="Password" required>
-            <i class="icon lock"></i>
-        </div>
-    </div>
-    <div class="field">
-        <div class="ui checkbox signup-check">
-        <input tabindex="0" name="signup-tearms" class="hidden" type="checkbox" required>
-        <label>I agree to the <a href="tearms.php">Terms</a> and <a href="tearms.php">Conditions</a></label>
-        </div>
+      <label for="">Event Mode</label>
+      <div class="ui search selection dropdown state-item">
+          <input name="event-mode" type="hidden">
+          <i class="dropdown icon"></i>
+          <div class="default text">Select Event Mode</div>
+          <div class="menu">
+          <a class="item active">Online</a>
+          <a class="item">OffLine</a>
+          <a class="item">Both</a>
+          <!-- <a class="item"></a> -->
+          </div>
+      </div>
     </div>
     <div class="ui header right aligned" style="margin:0;">
-        <button class="ui button inverted orange btn-login" type="submit">Sign Up</button>
+        <button class="ui button inverted orange btn-login" type="submit">Add Type</button>
     </div>
     </form>
 
@@ -108,9 +110,6 @@
     <div class="ui segment tall stacked orange signup-form2">
     <p>Service Provider! <a href="serviceProvider.php">Register Hear</a> </p>
     </div> -->
-    <div class="ui segment signup-form2">
-        <p>Already registered! <a href="login.php">Sign In</a> </p>
-    </div>
     </div>
 
     <!-- ======================  JS Files ===================== -->
